@@ -1,0 +1,73 @@
+@import "../../../../../styles.scss";
+
+.container {
+  overflow: hidden;
+}
+.octocat {
+  position: absolute;
+  width: 719px;
+  height: 719px;
+  left: 1003px;
+  top: 211px;
+  z-index: 1;
+  // background: 'assets\img\octocat-1715784898836.png';
+  filter: drop-shadow(700px 0px 280px rgba(0, 0, 0, 0.01))
+    drop-shadow(394px 0px 236px rgba(0, 0, 0, 0.05))
+    drop-shadow(175px 0px 175px rgba(0, 0, 0, 0.09))
+    drop-shadow(44px 0px 96px rgba(0, 0, 0, 0.1));
+}
+
+.text-container {
+  position: absolute;
+  width: 758px;
+  height: 293px;
+  left: 320px;
+  top: 155px;
+  overflow: hidden;
+}
+
+.text-container .text {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  display: inline;
+  align-items: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  /* Preto */
+  color: $preto;
+}
+
+span{
+  font-weight: 800;
+  /* Vermelho */
+  color: $vermelho;
+}
+.text.second-text:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $cinza;
+  border-left: 2px solid $vermelho;
+  animation: animate 4s steps(13) infinite;
+
+}
+@keyframes animate {
+  
+  40%, 60%{
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+// text-shadow: 16px 97px 39px rgba(0, 0, 0, 0.01),
+//   9px 54px 33px rgba(0, 0, 0, 0.05), 4px 24px 24px rgba(0, 0, 0, 0.09),
+//   1px 6px 13px rgba(0, 0, 0, 0.1);

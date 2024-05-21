@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+$cinza: #f2efea;
+$bege: #B68F40;
+$vermelho: #740806;
+$cinza-escuro: #4B5842;
+$preto: #151515;
+
+$font-family-poppins: 'Poppins', sans-serif;
+
+body {
+    position: relative;
+    width: 1920px;
+    height: 500vh;
+  
+    /* Cinza */
+    background: $cinza;
+    box-shadow: -820px -770px 450px rgba(184, 139, 62, 0.01),
+      -461px -433px 380px rgba(184, 139, 62, 0.05),
+      -205px -193px 281px rgba(184, 139, 62, 0.09),
+      -51px -48px 155px rgba(184, 139, 62, 0.1);
+  }
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: 'Poppins', sans-serif; }
